@@ -1,2 +1,0 @@
-# NeuroBurningHomeWork
-Homework legend git
