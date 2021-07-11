@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Bicubik-Regular'; 
+	src: url(8705.ttf); 
+}
+
+@font-face {
+	font-family: 'Futurespore Cyrillic'; 
+	src: url(19846.otf); 
+}
+
+.header {
+	width: 100%;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.header::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.header-content {
+	width: 80%;
+	margin: 0 auto;
+	padding: 100px 15px 0;
+}
+
+.header-content > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo {
+	width: 30%;
+	z-index: 3;
+}
+
+.header-logo img {
+	width: 100%;
+}
+
+.header-menu {
+	display: flex;
+	list-style: none;
+	z-index: 3;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.header-menu li {
+	margin-right: 35px;
+	transition-duration: 0.5s;
+}
+
+.header-menu li:last-child {
+	margin-right: 0;
+}
+
+.header-menu-anchor {
+	text-decoration-line: none;
+	color: #ffffff;
+	font-family: 'Bicubik-Regular';
+	font-weight: bold;
+	font-size: 1.2em; 
+	cursor: pointer;
+}
+
+.header-menu-anchor:hover {
+    color: #876308;
+}
+
+.header-menu-games {
+	list-style: none;
+  	position: absolute;
+  	transition: all 0.5s ease;
+  	display: none;
+}
+
+.header-menu li:hover > ul,
+.header-menu li ul:hover {
+  display: block;
+}
+
+.header-title {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding: 55px 0; 
+}
+
+.header-title h1 {
+	margin: 0 auto;
+	color: #ffffff;
+	font-family: 'Bicubik-Regular';
+	font-weight: bold;
+	font-size: 2em; 
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 3;
+}
+
+.main {
+	width: 100%;	
+}
+
+.main-index {	
+	z-index: 1;
+}
+
+
+
+.main-content {
+	display: flex;
+	width: 80%;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.main-content img {
+	width: 30%;
+	object-fit: contain;
+	align-self: flex-start;
+}
+
+.main-content-article {
+	width: 70%;
+	padding: 5% 5% 5% 5%;
+}
+
+.main-content-article p {
+	width: 80%;
+	font-size: 20px;
+	font-family: 'Futurespore Cyrillic';
+	font-weight: bold;
+	position: relative;
+	text-align: justify;
+}
+
+.footer {
+	width: 100%;
+	background: #606060;
+	z-index: 1;
+}
+
+.footer-content {
+	width: 80%;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-content p {
+	color: #ffffff;
+	font-family: 'Bicubik-Regular';
+	font-weight: bold;
+	font-size: 18px; 
+}
+
+.main-about {
+	background: rgb(121,171,103);
+	background: linear-gradient(90deg, rgba(121,171,103,0.6) 0%, rgba(0,0,0,1) 50%, rgba(121,171,103,1) 100%);
+}
+.content-about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.members {
+	min-width: 300px;
+	max-width: 550px;
+	width: 100%;
+	padding: 20px 0 0 10px;
+	border: 2px solid brown;
+	margin: 0 0 2%;
+	color: #fff;
+}
+
+.members img {
+	float: left;
+	width: 20%;
+	margin: 0 3% 3% 0;
+}
+
+.members h2 {
+	margin-block-start: 0;
+}
+
+.members p:last-of-type {
+	display: block;
+	clear: both;
+}
+
+.content-puzzle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-block p {
+	font-family: 'Bicubik-Regular';
+	font-weight: bold;
+	font-size: 18px; 
+	padding: 10px;
+	border: 3px solid brown;
+}
+
+.game-form {
+	display: flex;
+}
+
+.game-form input {
+	font-family: 'Bicubik-Regular';
+	font-weight: bold;
+	font-size: 10px; 
+	width: 200px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.game-form button {
+	width: 125px;
+	background: #fff;
+	height: 25px;
+	border: none;
+	padding: 0;
+}
+
+.game-form button:hover {
+	background: #ffd700;
+}
+
+.game-form button:focus {
+	outline: none;
+}
+
+.game-form button img {
+	width: 125px;
+	height: 25px;
+	object-fit: cover;
+}
